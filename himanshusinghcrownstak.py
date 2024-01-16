@@ -56,6 +56,7 @@ class MainTestCase(unittest.TestCase):
         except Exception as e:
             print("An error occurred:", e)
             self.logger.info("An error occurred")
+            
 
     def test_grocery30(self):
         self.driver.get("https://qasworks.workctrl.store/account/login?email=himanshu.singh@sworks.co.in&pass=0wEswqW9&location_id=40&urltype=android&param=%7Bparam%7D&isdropmate=false&floor=Stilt%202%20-%20World%20Trade%20Tower%20-%20Sector%2016%20-%20Noida&drop_available=0&param=%7Bparam%7D&price=9&user_id=54674&wallet_id=1a724133-b5f4-4fa4-974f-2f7dca8d07c5&company_id=202&shopify_shop=qasworks")
@@ -185,6 +186,8 @@ def test_grocery28(self):
         time.sleep(5)
         self.driver.switch_to.frame(0)
         time.sleep(5)
+    def test_grocery32(self):
+
 
 
 
