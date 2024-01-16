@@ -187,6 +187,22 @@ def test_grocery28(self):
         self.driver.switch_to.frame(0)
         time.sleep(5)
     def test_grocery32(self):
+        self.driver.get("https://devsworks-1103.myshopify.com/account/login?email=himanshu.singh@sworks.co.in&pass=0wEswqW9&location_id=40&urltype=android&param=%7Bparam%7D&isdropmate=false&floor=Stilt%202%20-%20World%20Trade%20Tower%20-%20Sector%2016%20-%20Noida&drop_available=0&param=%7Bparam%7D&price=9&user_id=54674&wallet_id=1a724133-b5f4-4fa4-974f-2f7dca8d07c5&company_id=202&shopify_shop=devsworks-1103")
+        time.sleep(5)
+        self.driver.find_element(By.LINK_TEXT, "Catalog").click()
+        print("click on catalog buton")
+        self.driver.find_element(By.ID, "CardLink-template--20351754567981__product-grid-8251732951341").click()
+        print("grocery item is selected")
+        time.sleep(15)
+        self.driver.find_element(By.CLASS_NAME, "product-form__submit").click()
+        time.sleep(40)
+        self.driver.find_element(By.ID, "cart-icon-bubble").click()
+        time.sleep(20)
+        print("click on cart icon")
+        self.driver.find_element(By.LINK_TEXT, "PLACE ORDER").click()
+        time.sleep(5)
+        self.driver.switch_to.frame(0)
+        time.sleep(5)
 
 
 
